@@ -1,0 +1,95 @@
+@keyframes movimento {
+    0%,100% {
+        margin-left: 90%;/*direita*/
+        margin-top: 65%;/*baixo*/
+    }
+    50% {
+        margin-left: 0%;/*esquerda*/
+        margin-top: 0%;/*cima*/
+    }
+}
+@keyframes apliar {
+    from {
+        transform: scale(1); /* Inicia no tamanho original */
+    }
+    to {
+        transform: scale(1.5); /* Aumenta para 150% */
+    }
+}
+
+@font-face {
+    font-family: 'AncientModernTales';
+    src: url('AncientModernTales-a7Po.ttf') format('truetype');
+}
+
+body {
+    background-image: url(images.jpeg);
+    background-size: cover;
+    font-family: 'AncientModernTales', sans-serif;
+}
+
+#statusp1 {
+    font-size: 30px;
+    background-color: blue;
+    width: 250px;
+    color: white;
+    margin: 0px;
+    float: left;
+    padding: 10px;
+    height: calc(100vh - 30px);
+}
+
+li {
+    margin-top: 10px;
+    width: max-content;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0; /* Remove o preenchimento padrão */
+    margin: 0; /* Remove a margem padrão */
+}
+
+.caixa {
+    color: whitesmoke;
+    float: left;
+    width: 30px;
+    height: min-content;
+    padding: 0px;
+    margin-right: 10px;
+    text-align: center;
+    background-color: black;
+    transition: transform 1s; /* Transição suave para a transformação */
+}
+
+.caixa:hover {
+    cursor: pointer;
+    transform: scale(1.5); /* Aplica a escala na rotação */
+}
+
+.status {
+    width: min-content;
+    float: left;
+    margin-left: 5px;
+    margin-right: 10px;
+    padding: 0px;
+}
+#campo {
+    width: 63.125%;
+    height: calc(100vh - 30px);
+    display: inline-block;
+    position: relative; /* Necessário para que a posição absoluta funcione */
+}
+#statusp2{
+    font-size: 30px;
+    background-color: red;
+    width: 250px;
+    color: white;
+    margin: 0px;
+    float: right;
+    padding: 10px;
+    height: calc(100vh - 30px);   
+}
+.pokemon{
+    position: absolute;
+}
